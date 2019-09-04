@@ -1,9 +1,66 @@
+body {
+    background-color: green;
+    color: #777777;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+.navbar-brand {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    margin-left: 34%;
+    width: 240px;
+    text-align: center;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+.navbar{
+    border-bottom: #777777 1px solid;
+    margin-right: 12%;
+}
+h4 {
+    color: #4aaaa5;
+    text-align: left;
+    margin-left: 30px;
+}
+
+
 img{
 margin: 20%;
 }
 
+#navParent{
+    background-color: #ffffff;
+}
+.nav-link {
+    color: #4aaaa5;
+}
 
-@media (min-width: 768px) and (max-width: 1200px){
+.container {
+    width: 100%;
+    max-width: 960px;
+    padding: 30px;
+    margin: 4% 0 40px;
+    background: #ffffff;
+    border: 1px solid #777777;
+}
+
+.photo h3 {
+    position: absolute;
+    bottom: 20px;
+    width: 83.5%;
+    padding: 10px;
+    margin-bottom: 0;
+    margin-left: 17.5%;
+    font-weight: 300;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: center;
+    background: #4aaaa5;
+    border-bottom: 0;
+  }
+  
+
+@media (min-width: 980px) and (max-width: 1000px){
+    /*nav bar adjustment*/
     .navbar-expand-custom {
         flex-direction: row;
         flex-wrap: nowrap;
@@ -21,12 +78,48 @@ margin: 20%;
     }
     .navbar-expand-custom .navbar-toggler {
         display: none;
+    }
+    .navbar-brand {
+        margin-left: 12%;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 979px){
+    /*nav bar adjustment*/
+    .navbar-expand-custom {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    .navbar-expand-custom .navbar-nav {
+        flex-direction: row;
+    }
+    .navbar-expand-custom .navbar-nav .nav-link {
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
+    .navbar-expand-custom .navbar-collapse {
+        display: flex!important;
+    }
+    .navbar-expand-custom .navbar-toggler {
+        display: none;
+    }
+    .navbar-brand {
+        margin-left: 1%;}
+    
+    .navbar {
+        width: 96%;
+    }
+    .container {
+        max-width: 93%;
     }
 }
 
 
 
-/*@media screen and (min-width: 640px) and (max-width: 767px) {
+@media screen and (min-width: 630px) and (max-width: 767px) {
+    /*nav bar adjustment*/
     .navbar-expand-custom {
         flex-direction: row;
         flex-wrap: nowrap;
@@ -43,6 +136,31 @@ margin: 20%;
         display: flex!important;
     }
     .navbar-expand-custom .navbar-toggler {
-        display: none;
+        display: none;}
+
+    .navbar-brand {
+        margin-left: 6%;}
+
+    .navbar {
+        width: 96%;
     }
-}*/
+
+    .container {
+        max-width: 93%;
+    }
+
+    .photo h3 {
+        position: absolute;
+        bottom: 101px;
+        width: 37.2%;
+        padding: 10px;
+        margin-bottom: 0;
+        margin-left: 18.8%;
+        font-weight: 300;
+        line-height: 30px;
+        color: #ffffff;
+        text-align: center;
+        background: #4aaaa5;
+        border-bottom: 0;
+        }
+}
