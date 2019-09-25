@@ -1,2 +1,4 @@
 # bootstrap-portfolio
-Homework 2 - built with bootstrap
+portfolio built with bootstrap
+
+https://baileymbeck.github.io/bootstrap-portfolio/
